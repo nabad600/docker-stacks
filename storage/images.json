@@ -150,6 +150,198 @@
           "env": "GITLAB_HOST_SSH_PORT"
         }
       ]
+    },
+    {
+      "name": "Apache_PHP 5.6",
+      "tags": ["apache", "php-fpm"],
+      "containers": ["web"],
+      "notes": "Basic PHP stack running on Apache2 and php 5.6-fpm.",
+      "dependencies": ["web"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 5.6
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.0",
+      "tags": ["apache", "php-fpm"],
+      "containers": ["web"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.0-fpm.",
+      "dependencies": ["web"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.0
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.1",
+      "tags": ["apache", "php-fpm"],
+      "containers": ["web"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.1-fpm.",
+      "dependencies": ["web"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.1
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.2",
+      "tags": ["apache", "php-fpm"],
+      "containers": ["web"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.2-fpm.",
+      "dependencies": ["web"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.2
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.3",
+      "tags": ["apache", "php-fpm"],
+      "containers": ["web"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.3-fpm.",
+      "dependencies": ["web"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Apache_PHP 7.4",
+      "tags": ["apache", "php-fpm"],
+      "containers": ["web"],
+      "notes": "Basic PHP stack running on Apache2 and php 7.4-fpm.",
+      "dependencies": ["web"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.4
+      },
+      "required": ["localPath"]
+    },
+    {
+      "name": "Nginx_PHP 7.0",
+      "tags": ["nginx", "php-fpm"],
+      "containers": ["nginxp"],
+      "notes": "Basic PHP stack running on Nginx and php 7.0-fpm.",
+      "dependencies": ["nginxp"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.0
+      },
+      "required": ["localPath"],
+      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.1",
+      "tags": ["nginx", "php-fpm"],
+      "containers": ["nginxp"],
+      "notes": "Basic PHP stack running on Nginx and php 7.1-fpm.",
+      "dependencies": ["nginxp"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.1
+      },
+      "required": ["localPath"],
+      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.2",
+      "tags": ["nginx", "php-fpm"],
+      "containers": ["nginxp"],
+      "notes": "Basic PHP stack running on Nginx and php 7.2-fpm.",
+      "dependencies": ["nginxp"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.2
+      },
+      "required": ["localPath"],
+      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.3",
+      "tags": ["nginx", "php-fpm"],
+      "containers": ["nginxp"],
+      "notes": "Basic PHP stack running on Nginx and php 7.3-fpm.",
+      "dependencies": ["nginxp"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.3
+      },
+      "required": ["localPath"],
+      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
+    },
+    {
+      "name": "Nginx_PHP 7.4",
+      "tags": ["nginx", "php-fpm"],
+      "containers": ["nginxp"],
+      "notes": "Basic PHP stack running on Nginx and php 7.4-fpm.",
+      "dependencies": ["nginxp"],
+      "ports": [
+        {
+          "env": "NGINX_HOST_HTTP_PORT",
+          "http": true
+        }
+      ],
+      "settings": {
+        "PHP_VERSION": 7.4
+      },
+      "required": ["localPath"],
+      "icon": "https://myjeeva.com/content/blog/php-fpm-nginx.png"
     }
   ]
 }
